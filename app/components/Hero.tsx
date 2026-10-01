@@ -13,7 +13,7 @@ export default function Hero() {
       />
       <div className={styles.overlay} />
       <div className={`container ${styles.content}`}>
-        <div className={styles.eyebrow}>הפקת פודקאסט</div>
+        <div className={styles.brandLine}>דניגל — הפקת פודקאסט</div>
         <h1 className={styles.title}>אתם תחשבו מה יש לכם להגיד.</h1>
         <h1 className={styles.title}>אני על כל השאר.</h1>
         <div className={styles.actions}>
