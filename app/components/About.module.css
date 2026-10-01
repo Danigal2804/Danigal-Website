@@ -39,6 +39,14 @@
   margin-bottom: 16px;
 }
 
+.closing {
+  font-family: var(--font-display);
+  font-size: 20px;
+  line-height: 1.6;
+  margin-top: 28px;
+  color: var(--color-cream);
+}
+
 @media (max-width: 720px) {
   .about {
     padding: 72px 0;

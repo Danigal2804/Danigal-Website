@@ -38,17 +38,17 @@ export default function StudioSetupPage() {
         </div>
       </section>
 
-      <section className={`section ${styles.steps}`}>
-        <div className="container">
-          <h2 className={styles.stepsHeading}>התהליך</h2>
+      <section className={styles.steps}>
+        <video className={styles.stepsVideo} src="/video/background-studio.mp4" autoPlay muted loop playsInline />
+        <div className={styles.stepsOverlay} />
+        <div className={`container ${styles.stepsInner}`}>
+          <h2 className={styles.stepsHeading}>איך זה עובד</h2>
           <div className={styles.stepList}>
             {STEPS.map((s) => (
               <div key={s.n} className={styles.step}>
                 <div className={styles.stepNumber}>{s.n}</div>
-                <div>
-                  <h3 className={styles.stepTitle}>{s.title}</h3>
-                  <p className={styles.stepText}>{s.text}</p>
-                </div>
+                <h3 className={styles.stepTitle}>{s.title}</h3>
+                <p className={styles.stepText}>{s.text}</p>
               </div>
             ))}
           </div>
