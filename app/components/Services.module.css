@@ -1,0 +1,44 @@
+.heading {
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 36px 30px;
+  transition: border-color 0.2s ease;
+}
+.card:hover {
+  border-color: var(--color-teal);
+}
+
+.number {
+  font-family: var(--font-display);
+  font-size: 15px;
+  color: var(--color-teal);
+  margin-bottom: 20px;
+}
+
+.cardTitle {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.cardText {
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: #4a4845;
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

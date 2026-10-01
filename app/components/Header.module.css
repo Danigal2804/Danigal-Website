@@ -1,0 +1,91 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--color-cream);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 34px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navLink {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-black);
+  position: relative;
+  padding: 4px 0;
+}
+
+.navLink:hover {
+  color: var(--color-teal);
+}
+
+.menuBtn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.menuBtn span {
+  width: 24px;
+  height: 2px;
+  background: var(--color-black);
+  display: block;
+}
+
+@media (max-width: 760px) {
+  .menuBtn {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 76px;
+    right: 0;
+    left: 0;
+    background: var(--color-cream);
+    border-bottom: 1px solid var(--color-border);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 0 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+
+  .navOpen {
+    max-height: 320px;
+  }
+
+  .navLink {
+    width: 100%;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+}
