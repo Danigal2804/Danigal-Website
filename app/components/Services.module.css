@@ -1,5 +1,5 @@
 .heading {
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 48px;
 }
 
@@ -21,18 +21,18 @@
 
 .number {
   font-family: var(--font-display);
-  font-size: 15px;
+  font-size: 16px;
   color: var(--color-teal);
   margin-bottom: 20px;
 }
 
 .cardTitle {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 14px;
 }
 
 .cardText {
-  font-size: 14.5px;
+  font-size: 16px;
   line-height: 1.75;
   color: #4a4845;
 }

@@ -57,8 +57,8 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -91,15 +91,16 @@ h3 {
 
 .section {
   padding: 96px 0;
+  border-top: 1px solid var(--color-black);
 }
 
 .eyebrow {
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--color-teal);
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .btn {
@@ -108,7 +109,7 @@ h3 {
   gap: 8px;
   padding: 14px 30px;
   border-radius: 999px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   border: 1.5px solid var(--color-black);
   background: transparent;

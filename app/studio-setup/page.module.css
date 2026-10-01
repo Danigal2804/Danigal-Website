@@ -32,12 +32,12 @@
 }
 
 .title {
-  font-size: 46px;
-  margin-bottom: 16px;
+  font-size: 50px;
+  margin-bottom: 18px;
 }
 
 .tagline {
-  font-size: 17px;
+  font-size: 19px;
   opacity: 0.9;
   max-width: 520px;
   margin-bottom: 32px;
@@ -48,7 +48,7 @@
 }
 
 .whyText {
-  font-size: 24px;
+  font-size: 26px;
   max-width: 640px;
   margin: 0 auto;
   line-height: 1.6;
@@ -59,6 +59,7 @@
   overflow: hidden;
   background: var(--color-black);
   padding: 96px 0;
+  border-top: 1px solid var(--color-black);
 }
 
 .stepsVideo {
@@ -82,7 +83,7 @@
 }
 
 .stepsHeading {
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 48px;
   color: var(--color-cream);
 }
@@ -104,20 +105,20 @@
 
 .stepNumber {
   font-family: var(--font-display);
-  font-size: 30px;
+  font-size: 32px;
   color: var(--color-cream);
   margin-bottom: 16px;
   font-style: italic;
 }
 
 .stepTitle {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 10px;
   color: var(--color-cream);
 }
 
 .stepText {
-  font-size: 13px;
+  font-size: 14.5px;
   color: var(--color-cream);
   opacity: 0.8;
   line-height: 1.7;
@@ -127,6 +128,7 @@
   background: var(--color-teal);
   color: var(--color-cream);
   padding: 72px 0;
+  border-top: 1px solid var(--color-black);
 }
 
 .highlightInner {
@@ -144,7 +146,7 @@
 }
 
 .highlightHeading {
-  font-size: 28px;
+  font-size: 30px;
   margin-top: 8px;
 }
 
@@ -153,7 +155,7 @@
 }
 
 .ctaHeading {
-  font-size: 30px;
+  font-size: 34px;
   margin-bottom: 28px;
 }
 
@@ -165,7 +167,7 @@
 
 .address {
   margin-top: 24px;
-  font-size: 14px;
+  font-size: 15px;
   color: #6b6862;
 }
 

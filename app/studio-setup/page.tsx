@@ -39,7 +39,7 @@ export default function StudioSetupPage() {
       </section>
 
       <section className={styles.steps}>
-        <video className={styles.stepsVideo} src="/video/background-studio.mp4" autoPlay muted loop playsInline />
+        <video className={styles.stepsVideo} src="/video/background-steps.mp4" autoPlay muted loop playsInline />
         <div className={styles.stepsOverlay} />
         <div className={`container ${styles.stepsInner}`}>
           <h2 className={styles.stepsHeading}>איך זה עובד</h2>
