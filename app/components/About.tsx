@@ -36,7 +36,9 @@ export default function About() {
             אלא יישמע, ייראה וירגיש כמו שחלמתם.
           </p>
         </div>
-        <img src="/images/daniel.jpg" alt="דניאל גל" className={styles.photo} />
+        <div className={styles.photoWrap}>
+          <img src="/images/daniel.jpg" alt="דניאל גל" className={styles.photo} />
+        </div>
       </div>
     </section>
   );

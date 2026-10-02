@@ -27,6 +27,7 @@
   color: var(--color-cream);
   padding-top: 40px;
   padding-bottom: 40px;
+  max-width: 1400px;
 }
 
 .brandLine {
@@ -38,10 +39,10 @@
 }
 
 .title {
-  font-size: 60px;
+  font-size: clamp(30px, 3.6vw, 58px);
   font-weight: 500;
   line-height: 1.2;
-  max-width: 880px;
+  white-space: nowrap;
 }
 
 .subtitle {
@@ -60,7 +61,8 @@
 
 @media (max-width: 720px) {
   .title {
-    font-size: 36px;
+    font-size: 30px;
+    white-space: normal;
   }
   .subtitle {
     font-size: 18px;
