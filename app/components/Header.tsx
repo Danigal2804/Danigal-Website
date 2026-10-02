@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Header.module.css";
 
 const NAV_LINKS = [
@@ -14,9 +14,19 @@ const NAV_LINKS = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    function onScroll() {
+      setScrolled(window.scrollY > 60);
+    }
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       <div className={`container ${styles.inner}`}>
         <Link href="/" className={styles.logoLink} onClick={() => setOpen(false)}>
           <img src="/images/logo-black.svg" alt="Danigal Studio" className={styles.logo} />

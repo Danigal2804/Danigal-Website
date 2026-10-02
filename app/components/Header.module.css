@@ -10,7 +10,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 200px;
+  height: 240px;
+  transition: height 0.25s ease;
+}
+
+.scrolled .inner {
+  height: 112px;
 }
 
 .logoLink {
@@ -19,8 +24,13 @@
 }
 
 .logo {
-  height: 160px;
+  height: 200px;
   width: auto;
+  transition: height 0.25s ease;
+}
+
+.scrolled .logo {
+  height: 92px;
 }
 
 .nav {
@@ -60,13 +70,19 @@
 
 @media (max-width: 760px) {
   .inner {
-    height: 120px;
-    justify-content: space-between;
-    gap: 16px;
+    height: 130px;
+  }
+
+  .scrolled .inner {
+    height: 76px;
   }
 
   .logo {
-    height: 88px;
+    height: 100px;
+  }
+
+  .scrolled .logo {
+    height: 52px;
   }
 
   .menuBtn {
@@ -75,7 +91,7 @@
 
   .nav {
     position: absolute;
-    top: 120px;
+    top: 100%;
     right: 0;
     left: 0;
     background: var(--color-cream);
