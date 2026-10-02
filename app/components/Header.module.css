@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 104px;
+  height: 136px;
 }
 
 .logoLink {
@@ -19,7 +19,7 @@
 }
 
 .logo {
-  height: 68px;
+  height: 98px;
   width: auto;
 }
 
@@ -60,11 +60,11 @@
 
 @media (max-width: 760px) {
   .inner {
-    height: 84px;
+    height: 96px;
   }
 
   .logo {
-    height: 50px;
+    height: 66px;
   }
 
   .menuBtn {
@@ -73,7 +73,7 @@
 
   .nav {
     position: absolute;
-    top: 84px;
+    top: 96px;
     right: 0;
     left: 0;
     background: var(--color-cream);

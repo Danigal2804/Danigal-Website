@@ -6,8 +6,7 @@ export default function Portfolio() {
   return (
     <section id="projects" className={`section ${styles.portfolio}`}>
       <div className="container">
-        <div className="eyebrow">פרויקטים</div>
-        <h2 className={styles.heading}>פודקאסטים שהפקתי</h2>
+        <h2 className={styles.heading}>פרויקטים</h2>
 
         <div className={styles.grid}>
           {podcasts.map((p) => (

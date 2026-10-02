@@ -32,15 +32,15 @@
 }
 
 .title {
-  font-size: 50px;
-  margin-bottom: 18px;
+  font-size: 66px;
+  margin-bottom: 20px;
 }
 
 .tagline {
-  font-size: 19px;
+  font-size: 24px;
   opacity: 0.9;
-  max-width: 520px;
-  margin-bottom: 32px;
+  max-width: 620px;
+  margin-bottom: 36px;
 }
 
 .why {
@@ -48,8 +48,8 @@
 }
 
 .whyText {
-  font-size: 26px;
-  max-width: 640px;
+  font-size: 32px;
+  max-width: 720px;
   margin: 0 auto;
   line-height: 1.6;
 }
@@ -83,8 +83,8 @@
 }
 
 .stepsHeading {
-  font-size: 36px;
-  margin-bottom: 48px;
+  font-size: 44px;
+  margin-bottom: 52px;
   color: var(--color-cream);
 }
 
@@ -95,7 +95,7 @@
 
 .step {
   flex: 1;
-  max-width: 220px;
+  max-width: 250px;
   padding: 0 20px;
   border-inline-start: 1px solid rgba(251, 247, 244, 0.3);
 }
@@ -105,22 +105,22 @@
 
 .stepNumber {
   font-family: var(--font-display);
-  font-size: 32px;
+  font-size: 40px;
   color: var(--color-cream);
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   font-style: italic;
 }
 
 .stepTitle {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 12px;
   color: var(--color-cream);
 }
 
 .stepText {
-  font-size: 14.5px;
+  font-size: 16px;
   color: var(--color-cream);
-  opacity: 0.8;
+  opacity: 0.85;
   line-height: 1.7;
 }
 
@@ -146,8 +146,8 @@
 }
 
 .highlightHeading {
-  font-size: 30px;
-  margin-top: 8px;
+  font-size: 36px;
+  margin-top: 10px;
 }
 
 .cta {
@@ -155,8 +155,8 @@
 }
 
 .ctaHeading {
-  font-size: 34px;
-  margin-bottom: 28px;
+  font-size: 42px;
+  margin-bottom: 32px;
 }
 
 .ctaActions {
@@ -167,12 +167,21 @@
 
 .address {
   margin-top: 24px;
-  font-size: 15px;
+  font-size: 17px;
   color: #6b6862;
 }
 
 @media (max-width: 760px) {
   .title {
+    font-size: 40px;
+  }
+  .tagline {
+    font-size: 19px;
+  }
+  .whyText {
+    font-size: 24px;
+  }
+  .stepsHeading {
     font-size: 32px;
   }
   .stepList {
@@ -192,6 +201,12 @@
   }
   .highlightInner {
     grid-template-columns: 1fr;
+  }
+  .highlightHeading {
+    font-size: 28px;
+  }
+  .ctaHeading {
+    font-size: 30px;
   }
   .ctaActions {
     flex-direction: column;
