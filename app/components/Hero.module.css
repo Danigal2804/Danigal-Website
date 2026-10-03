@@ -45,6 +45,10 @@
   white-space: nowrap;
 }
 
+.mobileBreak {
+  display: none;
+}
+
 .subtitle {
   font-size: 22px;
   line-height: 1.6;
@@ -63,6 +67,9 @@
   .title {
     font-size: 30px;
     white-space: normal;
+  }
+  .mobileBreak {
+    display: block;
   }
   .subtitle {
     font-size: 18px;

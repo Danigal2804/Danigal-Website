@@ -13,6 +13,20 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
+}
+
+.videoMobile {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .videoDesktop {
+    display: none;
+  }
+  .videoMobile {
+    display: block;
+  }
 }
 
 .overlay {
@@ -201,6 +215,9 @@
   }
   .highlightInner {
     grid-template-columns: 1fr;
+  }
+  .highlightText {
+    order: -1;
   }
   .highlightHeading {
     font-size: 28px;

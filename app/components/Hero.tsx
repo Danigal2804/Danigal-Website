@@ -14,7 +14,9 @@ export default function Hero() {
       <div className={styles.overlay} />
       <div className={`container ${styles.content}`}>
         <div className={styles.brandLine}>דניגל — הפקת פודקאסט</div>
-        <h1 className={styles.title}>לא עוד פודקאסט, תוכן ששווה להקשיב לו.</h1>
+        <h1 className={styles.title}>
+          לא עוד פודקאסט,<br className={styles.mobileBreak} /> תוכן ששווה להקשיב לו.
+        </h1>
         <p className={styles.subtitle}>
           הפקה, עריכה וליווי מקצועי לאנשים שרוצים ליצור פודקאסט אמיתי.
         </p>
