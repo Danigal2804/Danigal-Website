@@ -59,7 +59,7 @@
   overflow: hidden;
   background: var(--color-black);
   padding: 96px 0;
-  border-top: 1px solid var(--color-black);
+  border-top: 3px solid var(--color-black);
 }
 
 .stepsVideo {
@@ -128,7 +128,7 @@
   background: var(--color-teal);
   color: var(--color-cream);
   padding: 72px 0;
-  border-top: 1px solid var(--color-black);
+  border-top: 3px solid var(--color-black);
 }
 
 .highlightInner {

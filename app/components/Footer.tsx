@@ -14,7 +14,14 @@ export default function Footer() {
           <a href="tel:0502252263" className={styles.link}>
             050-2252263
           </a>
-          <div className={styles.address}>אולפן: יוסף קארו 15, תל אביב</div>
+          <a
+            href="https://share.google/big4391Ku6vBjOnuM"
+            target="_blank"
+            rel="noreferrer"
+            className={`${styles.link} ${styles.address}`}
+          >
+            אולפן: יוסף קארו 15, תל אביב
+          </a>
         </div>
 
         <div className={styles.social}>
