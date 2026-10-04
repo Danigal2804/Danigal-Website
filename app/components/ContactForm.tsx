@@ -2,6 +2,7 @@
 
 import { useState, FormEvent } from "react";
 import styles from "./ContactForm.module.css";
+import { trackContactFormSubmit } from "../lib/gtag";
 
 // TODO: Replace with a real Web3Forms access key (sign up free at https://web3forms.com)
 const WEB3FORMS_ACCESS_KEY = "REPLACE_WITH_YOUR_WEB3FORMS_KEY";
@@ -28,6 +29,7 @@ export default function ContactForm() {
       const data = await res.json();
       if (data.success) {
         setStatus("success");
+        trackContactFormSubmit();
         form.reset();
       } else {
         setStatus("error");

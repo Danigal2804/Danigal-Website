@@ -1,4 +1,7 @@
+"use client";
+
 import styles from "./Hero.module.css";
+import { trackWhatsappClick } from "../lib/gtag";
 
 export default function Hero() {
   return (
@@ -25,6 +28,7 @@ export default function Hero() {
             href="https://api.whatsapp.com/send?phone=972502252263"
             target="_blank"
             rel="noreferrer"
+            onClick={trackWhatsappClick}
             className="btn btn-primary"
           >
             בואו נדבר

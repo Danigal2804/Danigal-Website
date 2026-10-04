@@ -1,4 +1,7 @@
+"use client";
+
 import styles from "./Footer.module.css";
+import { trackWhatsappClick } from "../lib/gtag";
 
 export default function Footer() {
   return (
@@ -34,7 +37,13 @@ export default function Footer() {
           <a href="https://www.instagram.com/danigal__" target="_blank" rel="noreferrer" className={styles.link}>
             Instagram
           </a>
-          <a href="https://api.whatsapp.com/send?phone=972502252263" target="_blank" rel="noreferrer" className={styles.link}>
+          <a
+            href="https://api.whatsapp.com/send?phone=972502252263"
+            target="_blank"
+            rel="noreferrer"
+            onClick={trackWhatsappClick}
+            className={styles.link}
+          >
             WhatsApp
           </a>
         </div>
