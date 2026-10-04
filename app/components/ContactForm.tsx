@@ -4,8 +4,7 @@ import { useState, FormEvent } from "react";
 import styles from "./ContactForm.module.css";
 import { trackContactFormSubmit } from "../lib/gtag";
 
-// TODO: Replace with a real Web3Forms access key (sign up free at https://web3forms.com)
-const WEB3FORMS_ACCESS_KEY = "REPLACE_WITH_YOUR_WEB3FORMS_KEY";
+const WEB3FORMS_ACCESS_KEY = "7d7a176c-7bb7-4390-aed8-ffaadbece93a";
 
 type Status = "idle" | "sending" | "success" | "error";
 
