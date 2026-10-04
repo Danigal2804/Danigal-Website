@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "הקמת אולפן פודקאסט | Danigal Studio",
-  description: "הדרך הקלה והמקצועית לאולפן פודקאסט משלך מתחילה כאן — תכנון, עיצוב, הקמה וליווי.",
+  title: "הקמת אולפן פודקאסט",
+  description:
+    "הקמת אולפן פודקאסט ובניית אולפן הקלטה מאפס — תכנון, עיצוב, ציוד והקמה. בניתי אולפני פודקאסט ביתיים לעסקים קטנים ואולפנים גדולים לחברות ענק. דניאל גל, דניגל סטודיו, תל אביב.",
+  alternates: {
+    canonical: "/הקמת-אולפן",
+  },
+  openGraph: {
+    title: "הקמת אולפן פודקאסט | Danigal Studio",
+    description: "הקמת אולפן פודקאסט ובניית אולפן הקלטה מאפס — תכנון, עיצוב, ציוד והקמה.",
+  },
 };
 
 const STEPS = [
