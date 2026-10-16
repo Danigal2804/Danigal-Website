@@ -78,6 +78,16 @@ export default function ContactForm() {
               </p>
             )}
           </div>
+
+          <p className={styles.consent}>
+            מידע שיימסר וייאסף אודותיי יישמר במאגרי דניגל סטודיו (דניאל גל),
+            daniel.grr@gmail.com, והשימוש בו ייעשה בהתאם ל
+            <a href="/מדיניות-פרטיות" className={styles.consentLink}>
+              מדיניות הפרטיות
+            </a>
+            . אני מודע/ת לזכותי לעיון ותיקון במידע האישי ולנחיצותו לצורך קבלת השירות, וללא
+            מסירתו לא יתאפשר לספק את השירותים.
+          </p>
         </form>
       </div>
     </section>

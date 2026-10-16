@@ -49,3 +49,15 @@
   font-size: 14px;
   font-weight: 700;
 }
+
+.consent {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #4a4845;
+  margin-top: 4px;
+}
+
+.consentLink {
+  color: var(--color-teal);
+  text-decoration: underline;
+}

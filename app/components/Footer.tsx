@@ -52,6 +52,10 @@ export default function Footer() {
         © {new Date().getFullYear()} Danigal Studio ·{" "}
         <a href="/נגישות" className={styles.a11yLink}>
           הצהרת נגישות
+        </a>{" "}
+        ·{" "}
+        <a href="/מדיניות-פרטיות" className={styles.a11yLink}>
+          מדיניות פרטיות
         </a>
       </div>
     </footer>

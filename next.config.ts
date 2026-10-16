@@ -17,6 +17,10 @@ const nextConfig: NextConfig = {
         source: "/%D7%A0%D7%92%D7%99%D7%A9%D7%95%D7%AA",
         destination: "/accessibility",
       },
+      {
+        source: "/%D7%9E%D7%93%D7%99%D7%A0%D7%99%D7%95%D7%AA-%D7%A4%D7%A8%D7%98%D7%99%D7%95%D7%AA",
+        destination: "/privacy",
+      },
     ];
   },
 };
