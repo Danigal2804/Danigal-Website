@@ -10,6 +10,7 @@ export default function About() {
         muted
         loop
         playsInline
+        aria-hidden="true"
       />
       <div className={styles.overlay} />
       <div className={`container ${styles.inner}`}>

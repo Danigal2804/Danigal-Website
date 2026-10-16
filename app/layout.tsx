@@ -81,6 +81,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             gtag('config', '${GOOGLE_ADS_ID}');
           `}
         </Script>
+        <a href="#main-content" className="skip-link">
+          דלג לתוכן הראשי
+        </a>
         <Header />
         {children}
         <Footer />

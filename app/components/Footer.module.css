@@ -55,8 +55,16 @@
 .copy {
   text-align: center;
   font-size: 13px;
-  opacity: 0.5;
+  color: #a8a49e;
   padding: 16px 24px 28px;
+}
+
+.a11yLink {
+  color: #a8a49e;
+  text-decoration: underline;
+}
+.a11yLink:hover {
+  color: var(--color-teal);
 }
 
 @media (max-width: 640px) {

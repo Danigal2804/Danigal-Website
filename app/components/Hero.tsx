@@ -13,6 +13,7 @@ export default function Hero() {
         muted
         loop
         playsInline
+        aria-hidden="true"
       />
       <div className={styles.overlay} />
       <div className={`container ${styles.content}`}>

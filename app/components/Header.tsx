@@ -32,7 +32,7 @@ export default function Header() {
           <img src="/images/logo-black.svg" alt="Danigal Studio" className={styles.logo} />
         </Link>
 
-        <nav className={`${styles.nav} ${open ? styles.navOpen : ""}`}>
+        <nav id="main-nav" className={`${styles.nav} ${open ? styles.navOpen : ""}`}>
           {NAV_LINKS.map((link) => (
             <Link key={link.href} href={link.href} className={styles.navLink} onClick={() => setOpen(false)}>
               {link.label}
@@ -43,6 +43,8 @@ export default function Header() {
         <button
           className={styles.menuBtn}
           aria-label="תפריט"
+          aria-expanded={open}
+          aria-controls="main-nav"
           onClick={() => setOpen((v) => !v)}
         >
           <span />

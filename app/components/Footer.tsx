@@ -48,7 +48,12 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className={styles.copy}>© {new Date().getFullYear()} Danigal Studio</div>
+      <div className={styles.copy}>
+        © {new Date().getFullYear()} Danigal Studio ·{" "}
+        <a href="/נגישות" className={styles.a11yLink}>
+          הצהרת נגישות
+        </a>
+      </div>
     </footer>
   );
 }

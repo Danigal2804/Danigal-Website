@@ -1,0 +1,45 @@
+.wrap {
+  padding-top: 140px;
+}
+
+.content {
+  max-width: 760px;
+}
+
+.content p {
+  line-height: 1.8;
+  margin-bottom: 24px;
+  color: var(--color-text);
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: 40px;
+  margin-bottom: 32px;
+}
+
+.subheading {
+  font-family: var(--font-display);
+  font-size: 22px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.link {
+  color: var(--color-teal);
+  text-decoration: underline;
+}
+
+.date {
+  color: #6b6863;
+  font-size: 14px;
+}
+
+@media (max-width: 720px) {
+  .wrap {
+    padding-top: 110px;
+  }
+  .heading {
+    font-size: 30px;
+  }
+}

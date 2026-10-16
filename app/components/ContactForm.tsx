@@ -45,20 +45,39 @@ export default function ContactForm() {
         <h2 className={styles.heading}>בואו נדבר על הפודקאסט הבא שלכם</h2>
 
         <form className={styles.form} onSubmit={handleSubmit}>
-          <input type="text" name="name" placeholder="שם מלא" required className={styles.input} />
-          <input type="email" name="email" placeholder="Email" required className={styles.input} />
-          <textarea name="message" placeholder="ספרו לי קצת על הפרויקט" rows={5} className={styles.textarea} />
+          <label htmlFor="contact-name" className="sr-only">
+            שם מלא
+          </label>
+          <input id="contact-name" type="text" name="name" placeholder="שם מלא" required className={styles.input} />
+
+          <label htmlFor="contact-email" className="sr-only">
+            אימייל
+          </label>
+          <input id="contact-email" type="email" name="email" placeholder="Email" required className={styles.input} />
+
+          <label htmlFor="contact-message" className="sr-only">
+            ספרו לי קצת על הפרויקט
+          </label>
+          <textarea
+            id="contact-message"
+            name="message"
+            placeholder="ספרו לי קצת על הפרויקט"
+            rows={5}
+            className={styles.textarea}
+          />
 
           <button type="submit" className="btn btn-primary" disabled={status === "sending"}>
             {status === "sending" ? "שולח..." : "שליחה"}
           </button>
 
-          {status === "success" && <p className={styles.success}>תודה! ההודעה נשלחה, אחזור אליכם בהקדם.</p>}
-          {status === "error" && (
-            <p className={styles.errorMsg}>
-              משהו השתבש בשליחה. אפשר גם לכתוב ישירות ל-daniel.grr@gmail.com.
-            </p>
-          )}
+          <div role="status" aria-live="polite">
+            {status === "success" && <p className={styles.success}>תודה! ההודעה נשלחה, אחזור אליכם בהקדם.</p>}
+            {status === "error" && (
+              <p className={styles.errorMsg}>
+                משהו השתבש בשליחה. אפשר גם לכתוב ישירות ל-daniel.grr@gmail.com.
+              </p>
+            )}
+          </div>
         </form>
       </div>
     </section>

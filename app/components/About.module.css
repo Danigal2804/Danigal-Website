@@ -39,7 +39,9 @@
   font-size: 17px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--color-clay);
+  /* Lighter tint of --color-clay: the base clay only hits 3.34:1 against this
+     dark background, below the 4.5:1 WCAG AA minimum for this text size. */
+  color: #dd6b35;
   font-weight: 700;
   margin-bottom: 16px;
 }

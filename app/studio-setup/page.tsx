@@ -24,10 +24,10 @@ const STEPS = [
 
 export default function StudioSetupPage() {
   return (
-    <main>
+    <main id="main-content">
       <section className={styles.hero}>
-        <video className={`${styles.video} ${styles.videoDesktop}`} src="/video/background-studio.mp4" autoPlay muted loop playsInline />
-        <video className={`${styles.video} ${styles.videoMobile}`} src="/video/background-studio-mobile.mp4" autoPlay muted loop playsInline />
+        <video className={`${styles.video} ${styles.videoDesktop}`} src="/video/background-studio.mp4" autoPlay muted loop playsInline aria-hidden="true" />
+        <video className={`${styles.video} ${styles.videoMobile}`} src="/video/background-studio-mobile.mp4" autoPlay muted loop playsInline aria-hidden="true" />
         <div className={styles.overlay} />
         <div className={`container ${styles.heroContent}`}>
           <h1 className={styles.title}>הקמת אולפנים</h1>
@@ -48,7 +48,7 @@ export default function StudioSetupPage() {
       </section>
 
       <section className={styles.steps}>
-        <video className={styles.stepsVideo} src="/video/background-steps.mp4" autoPlay muted loop playsInline />
+        <video className={styles.stepsVideo} src="/video/background-steps.mp4" autoPlay muted loop playsInline aria-hidden="true" />
         <div className={styles.stepsOverlay} />
         <div className={`container ${styles.stepsInner}`}>
           <h2 className={styles.stepsHeading}>איך זה עובד</h2>
@@ -66,7 +66,7 @@ export default function StudioSetupPage() {
 
       <section className={styles.highlight}>
         <div className={`container ${styles.highlightInner}`}>
-          <video className={styles.highlightVideo} src="/video/studio-build-highlight.mp4" autoPlay muted loop playsInline />
+          <video className={styles.highlightVideo} src="/video/studio-build-highlight.mp4" autoPlay muted loop playsInline aria-hidden="true" />
           <div className={styles.highlightText}>
             <div className="eyebrow">מאחורי הקלעים</div>
             <h2 className={styles.highlightHeading}>ככה נראית הקמת אולפן, מקרוב</h2>
