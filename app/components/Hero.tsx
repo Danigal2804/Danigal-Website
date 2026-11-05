@@ -2,19 +2,12 @@
 
 import styles from "./Hero.module.css";
 import { trackWhatsappClick } from "../lib/gtag";
+import BackgroundVideo from "./BackgroundVideo";
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
-      <video
-        className={styles.video}
-        src="/video/hero.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-        aria-hidden="true"
-      />
+      <BackgroundVideo className={styles.video} src="/video/hero.mp4" poster="/images/hero-poster.jpg" />
       <div className={styles.overlay} />
       <div className={`container ${styles.content}`}>
         <div className={styles.brandLine}>דניגל — הפקת פודקאסט</div>

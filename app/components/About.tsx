@@ -1,17 +1,10 @@
 import styles from "./About.module.css";
+import BackgroundVideo from "./BackgroundVideo";
 
 export default function About() {
   return (
     <section id="about" className={styles.about}>
-      <video
-        className={styles.video}
-        src="/video/background-about.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-        aria-hidden="true"
-      />
+      <BackgroundVideo className={styles.video} src="/video/background-about.mp4" poster="/images/about-poster.jpg" />
       <div className={styles.overlay} />
       <div className={`container ${styles.inner}`}>
         <div className={styles.content}>
